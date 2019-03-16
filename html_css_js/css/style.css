@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.header {
+    background-position: relative;
+    height: 100%;
+}
+
+.body-content {
+
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    z-index: 2;
+}
+.circle:hover {
+    z-index: 1;
+}
+
+.circle--top-left {
+    background: url('https://steamuserimages-a.akamaihd.net/ugc/269464574506650891/AAFC853B743B5BC9169D025DDD6932900A0B737D/');
+    background-attachment: fixed;
+    clip-path: circle(100px at 0 0);
+}
+.circle--top-left:hover {
+    clip-path: circle(1200px at 0 0);
+}
+
+.circle--top-right {
+    background: url('https://camo.githubusercontent.com/10f672d66224dccbecc038630bb43111c47c29a7/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d36726b69743879627a65552f556c635f463278374c68492f41414141414141414f63772f354b4e79305348696858412f73323536302f426561757479437265656b2e6a7067');
+    background-attachment: fixed;
+    clip-path: circle(100px at 100% 0);
+}
+.circle--top-right:hover {
+    clip-path: circle(1200px at 100% 0);
+}
+
+.circle--bottom-left {
+    background: url('http://gracechurchill.com/wp-content/uploads/2017/02/Quotefancy-18776-3840x2160.jpg');
+    background-attachment: fixed;
+    clip-path: circle(100px at 0 100%);    
+}
+.circle--bottom-left:hover {
+    clip-path: circle(1200px at 0 100%);
+}
+
+.circle--bottom-right {
+    background: url('http://www.supremecowork.com/blog/wp-content/uploads/2018/08/3.jpg');
+    background-attachment: fixed;
+    clip-path: circle(100px at 100% 100%);
+}
+.circle--bottom-right:hover {
+    clip-path: circle(1200px at 100% 100%);
+}
+
+.background-cover {
+    background-size: cover;
+}
