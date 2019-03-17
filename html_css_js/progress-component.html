@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Progress module component</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Cong Tran">
+        <meta name="description" content="Make progress bar component">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/responsive_min.css">
+        <link rel="stylesheet" href="css/progress.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="progress">
+                <!--
+                    .label is a seperate component, used for form labels, but can be applied
+                    to non-label tags, and can be extended with a modifier class.
+                -->
+                <label for="" class="label">Installing Node Module</label>
+    
+                <!-- progress element (sub-object) -->
+                <div class="progress__track">
+                    <!--
+                        Component sub-objects dont't need more than the component name
+                        as a prefix; progress__track__bar is verbose and unnecessary.
+    
+                        Inline styles show here would be applied by JavaScript using
+                        the independent 'js-' class.
+                    -->
+                    <div class="progress__bar js-progress-percent" style="width: 63%"></div>
+                </div>
+                <div class="progress__description clearfix">
+                    <!--
+                        .layout-pull and .layout-push are LTR/RTL-agnostic utility classes for floating;
+                        these should not appear in core default markup since they are not
+                        design-independent
+                    -->
+                    <div class="layout-pull">Installed 15 of 24 modules</div>
+                    <strong class="layout-push">63%</strong>
+                </div>
+    
+                <!--
+                    Note that appearance is not tied to the tag; the appearance of the
+                    <button> element would be reset in the base layer and styled as
+                    needed by applying classes.
+    
+                    Since this element uses an icon, it could be refactored to use a generic
+                    icon container component.
+                -->
+                <button class="progress__cancel" href="#" title="cancel">cancel</button>
+            </div>
+        </div>
+
+        <!--
+            Modifier classes create component variants; modifier classes must
+            be used with the original class in the markup
+        -->
+        <div class="row">
+            <div class="progress progress--small">
+                <!--
+                    .label is a seperate component, used for form labels, but can be applied
+                    to non-label tags, and can be extended with a modifier class.
+                -->
+                <label for="" class="label label--small">Uploading syndey-opera-house-sunset.jpg</label>
+    
+                <!-- progress element (sub-object) -->
+                <div class="progress__track">
+                    <!--
+                        Component sub-objects dont't need more than the component name
+                        as a prefix; progress__track__bar is verbose and unnecessary.
+    
+                        Inline styles show here would be applied by JavaScript using
+                        the independent 'js-' class.
+                    -->
+                    <div class="progress__bar js-progress-percent" style="width: 29%"></div>
+                </div>
+                <div class="progress__description clearfix">
+                    <!--
+                        .layout-pull and .layout-push are LTR/RTL-agnostic utility classes for floating;
+                        these should not appear in core default markup since they are not
+                        design-independent
+                    -->
+                    <div class="layout-pull">Uploaded 221 of 762KB</div>
+                    <strong class="layout-push">29%</strong>
+                </div>
+    
+                <!--
+                    Note that appearance is not tied to the tag; the appearance of the
+                    <button> element would be reset in the base layer and styled as
+                    needed by applying classes.
+    
+                    Since this element uses an icon, it could be refactored to use a generic
+                    icon container component.
+                -->
+                <button class="progress__cancel" href="#" title="cancel"><span class="visualy-hidden">cancel</span></button>
+            </div>
+        </div>
+    </body>
+</html>
