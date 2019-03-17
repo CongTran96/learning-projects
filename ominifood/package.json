@@ -1,0 +1,11 @@
+{
+  "name": "ominifood",
+  "version": "1.0.0",
+  "description": "ominifood",
+  "main": "index.js",
+  "author": "Cong Tran",
+  "license": "MIT",
+  "dependencies": {
+    "csscomb": "^4.2.0"
+  }
+}
